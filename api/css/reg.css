@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120vh;
+    background: #23242a;
+}
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3), 0 5px 10px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 600px;
+}
+.small_container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.small_container.full-width {
+    display: block;
+}
+.inside_container {
+    flex: 1;
+    margin-right: 10px;
+}
+.inside_container:last-child {
+    margin-right: -195px;
+}
+textarea {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.additional-fields {
+    margin-top: 10px;
+    display: block;
+}
+input[type="submit"] {
+    display: block;
+    width: 30%;
+    padding: 15px;
+    background: linear-gradient(135deg, #32CD32, #228B22);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+    box-shadow: 0 8px 15px rgba(50, 205, 50, 0.2), 0 4px 6px rgba(50, 205, 50, 0.15);
+}
+input[type="submit"]:hover {
+    background: linear-gradient(135deg, #228B22, #006400);
+    box-shadow: 0 12px 20px rgba(50, 205, 50, 0.3), 0 6px 8px rgba(50, 205, 50, 0.2);
+    transform: translateY(-2px);
+}
+input[type="submit"]:active {
+    transform: translateY(0);
+    box-shadow: 0 6px 10px rgba(50, 205, 50, 0.2), 0 3px 5px rgba(50, 205, 50, 0.15);
+}
+label {
+    margin: 16px;
+}
+input, select, textarea, label {
+    margin-top: 5px;
+}
+.disabled {
+    background-color: #e0e0e0;
+}
+#fdate {
+width: 47%;
+}
