@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #191919;
+}
+.gallery{
+    width: 900px;
+    display: flex;
+    overflow-x: scroll;
+}
+.gallery div{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    grid-gap: 20px;
+    flex: none;
+}
+.gallery div img{
+    width: 100%;
+    filter: grayscale(100%);
+    transition: transform 0.5s;
+}
+.gallery::webkit-scrollbar{
+    display: none;
+}
+.gallery-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10% auto;
+}
+#backBtn, #nextBtn{
+    width: 50px;
+    cursor: pointer;
+    margin: 40px;
+}
+.gallery div img:hover{
+    filter: grayscale(0);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+h1{
+    color:#00ffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:10px;
+font-family: cursive;
+}
+pre{
+    color:#cccccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:2rem ;
+    font-weight: 500;     
+    font-family: monospace;
+}
+pre:hover{
+    color:#00ffff;
+}
+h1:hover{
+    color:#cccccc;
+}
